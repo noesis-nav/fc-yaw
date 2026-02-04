@@ -2,7 +2,7 @@
 
 ## Overview
 Design and build a space-oriented flight controller for single-axis (yaw) attitude determination and control,
-demonstrated using a reaction wheel. Runs a deterministic closed-loop control loop on a custom PCB using an STM32 MCU.
+demonstrated using a reaction wheel. Runs a deterministic closed-loop control loop on a custom PCB.
 
 ## Scope
 
