@@ -41,4 +41,8 @@ A3. One-axis mechanical rig approximates free yaw rotation
 
 A4. Advanced actuators may exist as software stubs later
 
+## Architecture Placeholder
+
+Sensing → Estimation → Control → Actuator command → Mode logic → Fault handling
+
 
