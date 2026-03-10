@@ -23,6 +23,40 @@ The prototype demonstrates:
 
 ---
 
+## Current Scope and Exclusions
+
+The current prototype focuses on validating the core control architecture for a **single-axis reaction wheel stabilization system**.
+
+To maintain rapid prototyping and focus on core Guidance, Navigation, and Control (GNC) functionality, several capabilities commonly present in spacecraft Attitude Determination and Control Systems (ADCS) are intentionally excluded from the current implementation.
+
+### Current System Scope
+
+The prototype includes:
+
+* single-axis angular rate control
+* gyroscope-based rate measurement
+* proportional feedback controller
+* reaction wheel actuation
+* embedded real-time control loop
+* telemetry logging and experiment validation
+
+### Exclusions (Current Prototype)
+
+The following capabilities are intentionally **out of scope for this phase**:
+
+| Capability                           | Reason                                        |
+| ------------------------------------ | --------------------------------------------- |
+| three-axis attitude control          | mechanical complexity outside prototype scope |
+| multi-sensor fusion                  | unnecessary for single-axis rate control      |
+| reaction wheel arrays                | only one actuator required for demonstration  |
+| spacecraft-grade attitude estimation | simplified estimation sufficient              |
+| CAN or distributed avionics buses    | single-node embedded system                   |
+| custom flight controller PCB         | prototype uses development board              |
+
+These features may be introduced in future iterations once the single-axis control architecture has been validated experimentally.
+
+---
+
 # System Concept
 
 A rigid platform with a reaction wheel is controlled using gyroscope measurements.
